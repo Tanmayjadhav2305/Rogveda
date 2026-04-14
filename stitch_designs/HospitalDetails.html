@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f2f0f0",
+                    "secondary-fixed": "#d2e4ff",
+                    "surface-tint": "#375ca8",
+                    "surface-variant": "#e4e2e2",
+                    "on-secondary-fixed-variant": "#00497f",
+                    "surface-container-high": "#e9e8e7",
+                    "tertiary": "#002922",
+                    "on-tertiary-fixed-variant": "#005045",
+                    "inverse-surface": "#303031",
+                    "secondary-container": "#61acff",
+                    "background": "#fbf9f8",
+                    "primary-fixed-dim": "#b0c6ff",
+                    "on-surface": "#1b1c1c",
+                    "outline-variant": "#c4c6d3",
+                    "error-container": "#ffdad6",
+                    "outline": "#747782",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#8ff5df",
+                    "on-tertiary-fixed": "#00201b",
+                    "tertiary-fixed-dim": "#73d8c3",
+                    "secondary-fixed-dim": "#a0c9ff",
+                    "tertiary-container": "#004137",
+                    "on-tertiary-container": "#4cb39f",
+                    "primary-fixed": "#d9e2ff",
+                    "surface-container-highest": "#e4e2e2",
+                    "on-error-container": "#93000a",
+                    "primary-container": "#003580",
+                    "on-error": "#ffffff",
+                    "surface-container": "#efeded",
+                    "surface-container-low": "#f5f3f3",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#001945",
+                    "on-primary": "#ffffff",
+                    "primary": "#002155",
+                    "surface": "#fbf9f8",
+                    "surface-bright": "#fbf9f8",
+                    "surface-dim": "#dbdad9",
+                    "on-secondary-container": "#003f70",
+                    "on-surface-variant": "#434651",
+                    "on-primary-fixed-variant": "#1a438e",
+                    "on-background": "#1b1c1c",
+                    "secondary": "#0061a6",
+                    "on-primary-container": "#7fa1f2",
+                    "inverse-primary": "#b0c6ff",
+                    "on-secondary-fixed": "#001c37"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors rounded-full">
+<span class="material-symbols-outlined text-blue-900 dark:text-blue-200" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tighter text-blue-950 dark:text-white">Rogveda</h1>
+</div>
+<div class="flex items-center gap-6">
+<span class="hidden md:block font-inter text-slate-500 dark:text-slate-400">Search</span>
+<span class="hidden md:block font-inter text-slate-500 dark:text-slate-400">Bookings</span>
+<span class="hidden md:block font-inter text-blue-700 dark:text-blue-300 font-semibold">Profile</span>
+<button class="bg-surface-container-highest px-4 py-1.5 rounded-full text-sm font-bold text-blue-900">USD</button>
+</div>
+</header>
+<main class="pt-16 pb-32">
+<!-- Hero Gallery Section -->
+<section class="px-6 py-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-[400px] md:h-[600px]">
+<div class="md:col-span-8 overflow-hidden rounded-xl relative group">
+<img alt="Main Hospital Wing" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="modern luxury hospital building exterior with sleek glass facade and landscaped gardens at sunset with warm architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzxj7eGMO4hpg96yzqWr-k9c3HJcgUHeQouHAJbpuLCSxhKAhckoexoF3t0djuxslL-pWTOZWDhgNmu93DVgSXdDIXxPqEVopNFaiWgCUTqOS13QGKeO_A7_DKWzskkdqmz1PNkXAtlkIyZe-_moJ9R2sHklqH0xuht7gvg-SOIg_Cf85v9Gss0uPjQusQRk1-pkJxvwsXgt94Lpby9TaG5B_La-LYqUOSICz25wyVStLz9G2a3HtKJH0fjaiUmkvVUUDSucVNa3QN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h2 class="text-3xl md:text-5xl font-extrabold tracking-tight">Rogveda Wellness Center</h2>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="location_on">location_on</span>
+<p class="text-sm font-medium opacity-90">Mumbai, Medical District • International Excellence</p>
+</div>
+</div>
+</div>
+<div class="hidden md:grid md:col-span-4 grid-rows-2 gap-4">
+<div class="overflow-hidden rounded-xl">
+<img alt="Luxury Suite" class="w-full h-full object-cover" data-alt="ultra-modern luxury hospital recovery suite with large windows viewing a city skyline, contemporary furniture and minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvI8w6HdCW1a4zGIlw2aWemhHVDDZ8otuOLoM8jYcdDyxn2EfB_N4lQqTFLwtKYUxqOXUdu4LoPeHBSYTs1H33A2fhENa7loN-idvcorVrbsK-EdQ2ZYEZQ1zl41aDPbw1umCaz28deuGS7j9CDaeBE_XLuCHw-O0FBDp9Nub4DNHsuVS0FQ8zdhV_B0dtri0UgNso0XmtSRvX3dNfibR9-U_FIDYbTohHOetz829tKRxu4PrP1_5F2T5LGOUTXzgiQamP_aptA8Am"/>
+</div>
+<div class="overflow-hidden rounded-xl relative">
+<img alt="Diagnostic Lab" class="w-full h-full object-cover" data-alt="advanced medical diagnostic laboratory with robotic arms and high-tech scanning equipment in a clean blue-tinted environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2OpAZWzhseZkISSWTIZF9oi9sNMoM2AHZE2GsxD7PZwEWWI4RkseJyig0Ud9XP5q9dm2wu9ZDZ5XOU_4nITmrytFKiqYvNuD4D1wHlFxAcnFOb-abLQVs-V5rw9GXre_1_Ina34l5VVF11Ts8sYIdQdzqPkX1hUNOjHCCBiN7w5gRZAwlR0rskSmApHyDoki5eNY2j6lcxE-cPwlxd6jFJnGA9NiYqbzhpbluH7fwHWJ1tSGuKMABcelpJPL5lUz66kFIdHdBoePc"/>
+<div class="absolute inset-0 bg-primary/60 flex items-center justify-center backdrop-blur-[2px]">
+<span class="text-white font-bold text-lg">+12 Photos</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Information Tabs & Content -->
+<section class="px-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-12">
+<!-- About Section -->
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h3 class="text-2xl font-bold tracking-tight mb-6">About the Facility</h3>
+<p class="text-on-surface-variant leading-relaxed body-lg">
+                        Rogveda Wellness Center stands at the intersection of clinical precision and holistic recovery. Founded as a flagship for international patient care, we specialize in minimally invasive cardiology and neuro-rehabilitation. Our facility is designed to reduce patient stress through natural lighting and biometric-led environment controls.
+                    </p>
+<div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col gap-1">
+<span class="text-secondary font-bold text-2xl">450+</span>
+<span class="text-xs uppercase tracking-widest text-outline">Specialists</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-secondary font-bold text-2xl">15+</span>
+<span class="text-xs uppercase tracking-widest text-outline">Theaters</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-secondary font-bold text-2xl">98%</span>
+<span class="text-xs uppercase tracking-widest text-outline">Success Rate</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-secondary font-bold text-2xl">JCI</span>
+<span class="text-xs uppercase tracking-widest text-outline">Accredited</span>
+</div>
+</div>
+</div>
+<!-- Dynamic Pricing / Customization Section -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] space-y-8">
+<div class="flex justify-between items-end">
+<div>
+<h3 class="text-2xl font-bold tracking-tight">Customize Your Package</h3>
+<p class="text-on-surface-variant text-sm mt-1">Select your preferred care level and accommodation</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Dynamic Pricing</span>
+</div>
+<!-- Step 1: Doctor Selection -->
+<div class="space-y-4">
+<label class="text-sm font-bold uppercase tracking-widest text-outline flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="clinical_notes">clinical_notes</span> 
+                            1. Select Specialist
+                        </label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Option 1 -->
+<div class="border-2 border-primary p-4 rounded-xl flex items-center gap-4 bg-primary-fixed/10 relative">
+<img alt="Dr. Sarah Chen" class="w-16 h-16 rounded-full object-cover" data-alt="professional portrait of a senior female medical consultant in a white lab coat with a warm and confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg6JZ_T1W880Rrd4Vxy5LMwGwTlq8Vo7vj1yeFaAfEcdjDU_8uF2419VvjUrm52nXQfJFD_sKQXJ9gECHH0HMamFnhzQxRqV_-Hiw46R7F0ZOwYVvswFc9qRoX4GyWVaIyabFSId_-Xkw0HzIZJoP8VXbyk-RDl5TOBB0ZHvR4y5dKgFU-lziDQVm8WfLj97gbuA6TGKdwA8ZZsXMiJrKe39g0xejt49xHsc6uKI1zTTpm6y4hXjor_kWsZZ0MEhdxDx4tjp9-rTIU"/>
+<div>
+<h4 class="font-bold text-primary">Dr. Sarah Chen</h4>
+<p class="text-xs text-on-surface-variant">Senior Consultant • 20y Exp.</p>
+<p class="text-sm font-bold mt-1">+$1,200</p>
+</div>
+<span class="material-symbols-outlined absolute top-4 right-4 text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Option 2 -->
+<div class="border border-outline-variant p-4 rounded-xl flex items-center gap-4 hover:bg-surface-container transition-colors cursor-pointer">
+<img alt="Dr. Marcus Thorne" class="w-16 h-16 rounded-full object-cover" data-alt="male medical specialist in scrubs, professional and friendly healthcare portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa5jVcpCjXpMc9BRMNlWxmpgagIrSuX8l4WsrUtD7UUXzGGrCCtF1a9fOC0XIcfb3NO365i5OB3kxnbZ8H0W2Voe8svEy2_8NseEHC8Ue5R7trjKQz2_qRUBMKpvGWs8-Lzbc3UwKxILpFJiHSUQ1v7dyzzut-eXvsSsp-SERMm7iGIXnP6qa8Tu82a8VJzcH4PpaUTcvJREFspa3iozqu2ZhM1IfP1M9QIiL2KVQF53HBaBy8xnqQXOnk2R03_fd-GOpn9D4xWpxd"/>
+<div>
+<h4 class="font-bold">Dr. Marcus Thorne</h4>
+<p class="text-xs text-on-surface-variant">Lead Specialist • 12y Exp.</p>
+<p class="text-sm font-bold mt-1">+$850</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 2: Room Type -->
+<div class="space-y-4">
+<label class="text-sm font-bold uppercase tracking-widest text-outline flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="bed">bed</span> 
+                            2. Room Preference
+                        </label>
+<div class="flex flex-col gap-3">
+<div class="flex justify-between items-center p-4 rounded-xl bg-surface-container-low border border-transparent hover:border-secondary transition-all cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="hotel_class">hotel_class</span>
+</div>
+<div>
+<h4 class="font-bold">Deluxe Suite</h4>
+<p class="text-xs text-on-surface-variant">Private lounge, guest bed, skyline view</p>
+</div>
+</div>
+<span class="font-bold text-secondary">+$450/day</span>
+</div>
+<div class="flex justify-between items-center p-4 rounded-xl bg-primary border-2 border-primary text-white shadow-lg">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="meeting_room">meeting_room</span>
+</div>
+<div>
+<h4 class="font-bold">Semi-Private</h4>
+<p class="text-xs opacity-80">Shared lounge, high-speed Wi-Fi included</p>
+</div>
+</div>
+<span class="font-bold">+$220/day</span>
+</div>
+<div class="flex justify-between items-center p-4 rounded-xl bg-surface-container-low border border-transparent hover:border-secondary transition-all cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="groups">groups</span>
+</div>
+<div>
+<h4 class="font-bold">General Ward</h4>
+<p class="text-xs text-on-surface-variant">Communal care, 24/7 nursing station</p>
+</div>
+</div>
+<span class="font-bold text-secondary">Included</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Location Section -->
+<div class="space-y-6">
+<h3 class="text-2xl font-bold tracking-tight">Location</h3>
+<div class="aspect-video w-full rounded-xl overflow-hidden bg-surface-container-highest relative">
+<img alt="Map location" class="w-full h-full object-cover opacity-60" data-location="Mumbai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACUmxxLGCg2cQGw6iMFde3M1vYs09kSmVXNXbMKQvCZjs4g9Z_akdlsdNtgzh5fRLtT3wOn4LTE6kKs6zVWhg9qs5siyNsDLQBv5cODboNIV2l94vt3AwPMDUNlIA_Sxum5uuMLBwI4LluS3K-jXOQN6BxbJoCGQDYWGL5MmoeVWIcpBHJMWQQzpB5E_IIAAkOv7bCG6p6WtWGzEf4jbKc7dbBZPPtx-e_UEMxePn1ZlKpofLZWaDSL377wgYGLniPl25s3PPf1nXO"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white p-4 rounded-full shadow-xl">
+<span class="material-symbols-outlined text-error text-3xl" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined mt-1" data-icon="directions">directions</span>
+<div>
+<p class="font-medium">420 Healthcare Blvd, South Mumbai, MH 400001</p>
+<p class="text-sm">15 minutes from Chhatrapati Shivaji Maharaj International Airport</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar / Booking Card -->
+<div class="lg:col-span-1">
+<div class="sticky top-24 space-y-6">
+<div class="bg-primary text-white p-8 rounded-3xl shadow-xl overflow-hidden relative">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<span class="text-xs font-bold uppercase tracking-[0.2em] opacity-70">Total Estimated Price</span>
+<div class="mt-2 flex items-baseline gap-2">
+<h2 class="text-4xl font-extrabold tracking-tighter">$14,420</h2>
+<span class="text-xl opacity-60">USD</span>
+</div>
+<div class="mt-8 space-y-4 border-t border-white/10 pt-6">
+<div class="flex justify-between text-sm">
+<span class="opacity-70">Base Procedure</span>
+<span>$13,000</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="opacity-70">Senior Consultant Fee</span>
+<span>$1,200</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="opacity-70">Room (1 Day Estimate)</span>
+<span>$220</span>
+</div>
+</div>
+<button class="w-full mt-10 bg-white text-primary font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-tertiary-fixed transition-colors">
+                                Book Treatment
+                                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-[10px] text-center mt-4 opacity-50 uppercase tracking-widest">Pricing subject to final clinical evaluation</p>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-2xl space-y-4">
+<h4 class="font-bold text-sm uppercase tracking-widest text-outline">Treatments Available</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-tertiary-fixed/30 text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold">Cardiology</span>
+<span class="bg-tertiary-fixed/30 text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold">Neurology</span>
+<span class="bg-tertiary-fixed/30 text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold">Orthopedics</span>
+<span class="bg-tertiary-fixed/30 text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold">Oncology</span>
+<span class="bg-tertiary-fixed/30 text-on-tertiary-fixed px-3 py-1 rounded-full text-xs font-semibold">Robotic Surgery</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] rounded-t-3xl z-50">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Bookings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-blue-900 dark:text-white bg-teal-100/50 dark:bg-teal-900/30 rounded-2xl px-5 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

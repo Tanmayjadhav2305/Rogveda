@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "error": "#ba1a1a",
+                "inverse-on-surface": "#f2f0f0",
+                "secondary-fixed": "#d2e4ff",
+                "surface-tint": "#375ca8",
+                "surface-variant": "#e4e2e2",
+                "on-secondary-fixed-variant": "#00497f",
+                "surface-container-high": "#e9e8e7",
+                "tertiary": "#002922",
+                "on-tertiary-fixed-variant": "#005045",
+                "inverse-surface": "#303031",
+                "secondary-container": "#61acff",
+                "background": "#fbf9f8",
+                "primary-fixed-dim": "#b0c6ff",
+                "on-surface": "#1b1c1c",
+                "outline-variant": "#c4c6d3",
+                "error-container": "#ffdad6",
+                "outline": "#747782",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-fixed": "#8ff5df",
+                "on-tertiary-fixed": "#00201b",
+                "tertiary-fixed-dim": "#73d8c3",
+                "secondary-fixed-dim": "#a0c9ff",
+                "tertiary-container": "#004137",
+                "on-tertiary-container": "#4cb39f",
+                "primary-fixed": "#d9e2ff",
+                "surface-container-highest": "#e4e2e2",
+                "on-error-container": "#93000a",
+                "primary-container": "#003580",
+                "on-error": "#ffffff",
+                "surface-container": "#efeded",
+                "surface-container-low": "#f5f3f3",
+                "on-secondary": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed": "#001945",
+                "on-primary": "#ffffff",
+                "primary": "#002155",
+                "surface": "#fbf9f8",
+                "surface-bright": "#fbf9f8",
+                "surface-dim": "#dbdad9",
+                "on-secondary-container": "#003f70",
+                "on-surface-variant": "#434651",
+                "on-primary-fixed-variant": "#1a438e",
+                "on-background": "#1b1c1c",
+                "secondary": "#0061a6",
+                "on-primary-container": "#7fa1f2",
+                "inverse-primary": "#b0c6ff",
+                "on-secondary-fixed": "#001c37"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Inter"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Inter', sans-serif; background-color: #fbf9f8; color: #1b1c1c; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      .glass-effect { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-xl shadow-sm flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-100/50 rounded-full transition-colors">
+<span class="material-symbols-outlined text-blue-900" data-icon="menu">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tighter text-blue-950">Rogveda</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-blue-700 font-semibold font-inter tracking-tight" href="#">Search</a>
+<a class="text-slate-500 hover:bg-slate-100/50 px-3 py-1 rounded-full transition-colors" href="#">Bookings</a>
+<a class="text-slate-500 hover:bg-slate-100/50 px-3 py-1 rounded-full transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-4 py-1.5 rounded-full border border-outline-variant/30 text-blue-900 font-medium text-sm hover:bg-slate-100/50 transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="payments">payments</span>
+                USD
+            </button>
+</div>
+</header>
+<main class="pt-16 pb-32">
+<!-- Hero Section -->
+<section class="relative min-h-[618px] flex items-center px-6 py-20 overflow-hidden">
+<div class="absolute inset-0 -z-10">
+<img class="w-full h-full object-cover opacity-10" data-alt="high-end modern hospital interior with clean minimalist architecture, soft daylight, and professional medical staff in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQBXm0uc1BfEpgQnKzcHNglLxYjYap_RCnsXkDdWbsz5X8Sw49bJhaUPMj47h-fRXbGjZcZvFam1Tj5yC-vEc987mBSlS8Zygq4L6_09c_MqfiRXHAB98rkH0SUP-dO--WwCQKB40osT2s7YP95O5gaJC9vCPWVTQQ3sSP-qQzgZtDfKkvkO4RG3lecSU3no4sHNNAmRSgKHF6mx4eZd4nOL9D72mQOH9KpE4qe1SEJsVdGXR188ebyb2oWr3G3iATSRCrwK9OBMC_"/>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-tertiary/5"></div>
+</div>
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-medium text-xs uppercase tracking-widest">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        India's Leading Medical Concierge
+                    </div>
+<h2 class="text-5xl md:text-7xl font-extrabold text-primary tracking-tight leading-[1.05]">
+                        Find World-Class <span class="text-secondary">Medical Care</span> in India
+                    </h2>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                        Access top-tier JCI accredited hospitals, renowned surgeons, and personalized care journeys designed for international patients.
+                    </p>
+</div>
+<!-- Floating Search Bento -->
+<div class="relative">
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-2xl shadow-primary/5 border border-white/40 glass-effect relative z-10">
+<div class="space-y-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-secondary ml-1">Treatment or Procedure</label>
+<div class="bg-surface-container-low rounded-xl px-5 py-4 flex items-center gap-4 group focus-within:ring-2 ring-secondary/20 transition-all">
+<span class="material-symbols-outlined text-secondary" data-icon="medical_services">medical_services</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-on-surface font-medium placeholder:text-outline" placeholder="e.g. Knee Replacement" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-secondary ml-1">Preferred City</label>
+<div class="bg-surface-container-low rounded-xl px-5 py-4 flex items-center gap-4 focus-within:ring-2 ring-secondary/20 transition-all">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-on-surface font-medium placeholder:text-outline" placeholder="Delhi, Mumbai, Chennai" type="text"/>
+</div>
+</div>
+<button class="w-full py-5 rounded-xl bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+                                Explore Hospitals
+                            </button>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-tertiary-fixed rounded-full -z-10 blur-3xl opacity-30"></div>
+<div class="absolute -top-6 -left-6 w-32 h-32 bg-secondary-container rounded-full -z-10 blur-3xl opacity-30"></div>
+</div>
+</div>
+</section>
+<!-- Quick Links: Popular Procedures -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+<div class="flex flex-wrap gap-4 justify-center">
+<span class="text-sm font-bold text-outline-variant uppercase tracking-widest w-full text-center mb-4">Popular Procedures</span>
+<button class="bg-tertiary-fixed px-6 py-3 rounded-full text-on-tertiary-fixed font-semibold flex items-center gap-2 hover:bg-tertiary-fixed-dim transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+                    Cardiology
+                </button>
+<button class="bg-surface-container-high px-6 py-3 rounded-full text-primary font-semibold flex items-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="bone">skeleton</span>
+                    Orthopedics
+                </button>
+<button class="bg-surface-container-high px-6 py-3 rounded-full text-primary font-semibold flex items-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="child_care">child_care</span>
+                    IVF &amp; Fertility
+                </button>
+<button class="bg-surface-container-high px-6 py-3 rounded-full text-primary font-semibold flex items-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[20px]" data-icon="eye_tracking">eye_tracking</span>
+                    Ophthalmology
+                </button>
+</div>
+</section>
+<!-- Trust Section: Top Hospitals -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="mb-16 flex justify-between items-end">
+<div>
+<h3 class="text-3xl font-bold text-primary tracking-tight mb-2">Partnering with Excellence</h3>
+<p class="text-on-surface-variant">JCI &amp; NABH Accredited Institutions in India</p>
+</div>
+<button class="text-secondary font-bold flex items-center gap-1 hover:underline">
+                    View All Hospitals
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Hospital Card 1 -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-64">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="ultra-modern glass building of a major hospital in Delhi with professional landscaping and blue sky background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4PPjK3LyJT_hX4RD6ZHp_DYyi_gSecot95f8S4lk7fK5H4RBJ5G5fEmYGjaXyG5sVI3i8YWDDtXH4VNBYOyQMb8QKsQCMLSq3Ig-Y9yEGRWmw6g4qOTwiNYwe1fIJAePG6lTxSiD27uhDAgG7G5HwlTRXcjUcCW7_JmHKIQK989R-L6qRIuDVBnCPTl7EXTsDpHZfgxlAkuMkPbPuabt4C8v-VhKTb-DfqjWhenbBr4WE8ZmbOO7H6etWIffIxQ8l8xGoRbL97Cgs"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.9</span>
+</div>
+</div>
+<div class="p-8 space-y-4">
+<h4 class="text-xl font-bold text-primary">Apollo Hospitals</h4>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                            New Delhi, India
+                        </div>
+<div class="pt-4 flex items-center justify-between">
+<div class="text-xs font-bold text-secondary uppercase tracking-widest">Pricing starts at</div>
+<div class="text-2xl font-black text-primary">$4,200</div>
+</div>
+</div>
+</div>
+<!-- Hospital Card 2 -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500 mt-4 md:mt-12">
+<div class="relative h-64">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="contemporary hospital facade with digital displays and spacious entrance in Mumbai at dusk with warm exterior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Dcj2P15DMJYSFcT6yUAEYDP-oP1jiHmtZDpEVuyTp2iO6ftPETwJwxklr14-c8DCaHcsuFMBTJ7poNKlGteemDelq-rQDBBjhwKwVW2DmLcgOLilobgqmq76Q-lJ7ybg3vktudegtHupCS7sFE72t079a__Yb_e4hD-fuBU1AJfDTXQjSOJTb9mVbLVCh2UZgTqT7q18GV7nOSh50a3HmCjM6d0LGLjR3ffc7WLcOqNBBB3ZikQAv9onOxWKvlk2gU99InyV48rD"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.8</span>
+</div>
+</div>
+<div class="p-8 space-y-4">
+<h4 class="text-xl font-bold text-primary">Medanta - The Medicity</h4>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                            Gurugram, India
+                        </div>
+<div class="pt-4 flex items-center justify-between">
+<div class="text-xs font-bold text-secondary uppercase tracking-widest">Pricing starts at</div>
+<div class="text-2xl font-black text-primary">$3,850</div>
+</div>
+</div>
+</div>
+<!-- Hospital Card 3 -->
+<div class="bg-surface-container-lowest rounded-[1.5rem] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500">
+<div class="relative h-64">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="sleek medical center with clean white surfaces and blue accents in Bangalore under bright tropical sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_Ronk4lRDcm7gwNzADlbZvSEqDsm0fG5S7b7nADrhNO2YM2o9x3gnrwvjSgxI0O9DV4k1kJMNJhkgdJ60TqF1fb67GOGA5Zd0UNvVlwegKVEK449jsHRRL04W0bo_5YpP85TABnPpqgCqQew1BHCVU9oPecWqC_8_S6gCTd0sxjD1COzcEDtsahhNbvXSWOYqHsGdeuVEoIN_Hnt0fD-2AibAQzmyCiAHZ6CbgVZmXoYciqQUo25_-MBtzkluQRThLGstGD0-EsS"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.7</span>
+</div>
+</div>
+<div class="p-8 space-y-4">
+<h4 class="text-xl font-bold text-primary">Fortis Memorial</h4>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                            Bengaluru, India
+                        </div>
+<div class="pt-4 flex items-center justify-between">
+<div class="text-xs font-bold text-secondary uppercase tracking-widest">Pricing starts at</div>
+<div class="text-2xl font-black text-primary">$5,100</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section: Verified Doctors -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="flex-1 space-y-8">
+<h3 class="text-4xl font-bold text-primary leading-tight">World-Renowned Specialists</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                            Our network includes surgeons and specialists with decades of experience, many trained at top international medical schools in the US, UK, and Europe.
+                        </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 bg-white rounded-2xl border border-white/50">
+<div class="text-3xl font-black text-secondary mb-1">500+</div>
+<div class="text-sm font-bold text-on-surface/60 uppercase">Verified Surgeons</div>
+</div>
+<div class="p-6 bg-white rounded-2xl border border-white/50">
+<div class="text-3xl font-black text-secondary mb-1">25k+</div>
+<div class="text-sm font-bold text-on-surface/60 uppercase">International Patients</div>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="bg-white p-4 rounded-3xl shadow-sm">
+<img class="w-full h-48 object-cover rounded-2xl mb-4" data-alt="professional portrait of a senior cardiologist with warm smile and medical attire in a bright office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8Twy5yXPyzy8gmIxdGeqflK8FI5VVCZ_JVKhfsHpc1gWcNBxb2AA___EwRSsLNjCHlx46hOvIqDHXkD8bBxo6Wy3ymEQiW3R_NTK9udF9xNRguJEkb0_VXuJcJm-9qDYrjUq9RD6VKn7eaMieX8TaywDXjusoVY4KVGp_SeKcDi8TSdNk6WD0ZJmxOdcMr6pTgaho8CHh9lo5z5aA6mVHUFyyp4IaBOSBfiYGxy0iO1LL_ZT-Br0T41O0XFEil2VZfFRHUGva7wTA"/>
+<div class="font-bold text-primary">Dr. Rajesh Kumar</div>
+<div class="text-xs text-secondary font-medium">Cardiology Specialist</div>
+</div>
+<div class="bg-white p-4 rounded-3xl shadow-sm">
+<img class="w-full h-32 object-cover rounded-2xl mb-4" data-alt="portrait of a female surgical specialist in scrub uniform with medical equipment in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWi9ud_mpwGJSFPxRAO1wTYkIKAKNqtnmDz86CbLIjCpjPXai3km2rercXQXargUQutwHCz0xblGy1wXn5vj1jFijv05msWUVvJ8NWzqXsPY5IlhXzLEfZ33C4qOAwE3u0uL1b_iJ6rdEBDkmdxuV24gxf15ipWspJYGNdANPWgiGVkZntH1XxLJM-_X2gF16fCCkzlj5FLnq7IEMYKhvO3TSWP7q3wc0q9IApB_iMxcPdxKppeZB76Ezsyit5eZ1XbxRwGsGzEHyF"/>
+<div class="font-bold text-primary">Dr. Ananya Shah</div>
+<div class="text-xs text-secondary font-medium">Oncology Expert</div>
+</div>
+</div>
+<div class="space-y-4 pt-8">
+<div class="bg-white p-4 rounded-3xl shadow-sm">
+<img class="w-full h-40 object-cover rounded-2xl mb-4" data-alt="senior male orthopedic surgeon standing in a clean hospital corridor with confidence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5tUyEjzhXbNhipK8l_x4ToBLUDEGcitubo2qLzFYUJljnWIH9XVe8E8t9pZBwg_yV_k6CO4BttffwTy11atY94l1Lrf8chevdhGQQ_MlsoEdwfHfAUykgeIQTlcsH0ev3J6PNdZ6fWWcOXWW0bAULe7iTt28EnfN7MGUd0R_ikT5uWclTFoqcAQPlaP9ZncDtOokVBFUAQyRfgpMllX75nN6n3umL7OZHsrfy9sSDlKiG938MwgZEKuccGE7vwE0utiJ2zd1tfHUj"/>
+<div class="font-bold text-primary">Dr. Vikram Singh</div>
+<div class="text-xs text-secondary font-medium">Orthopedics</div>
+</div>
+<div class="bg-primary p-6 rounded-3xl text-white flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="groups">groups</span>
+<div class="font-bold mb-1">Join 25,000+</div>
+<div class="text-xs text-on-primary-container">Happy Patients</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white/90 backdrop-blur-xl rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50">
+<a class="flex flex-col items-center justify-center text-blue-900 bg-teal-100/50 rounded-2xl px-5 py-2 scale-95 active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 py-2 hover:text-blue-800 scale-95 active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Bookings</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 py-2 hover:text-blue-800 scale-95 active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
